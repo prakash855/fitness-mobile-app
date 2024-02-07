@@ -9,6 +9,7 @@ const Layer = ({ top, width, background, children }) => (
       width,
       background,
       height: 280,
+      boxShadow: `${children && `#2f2f2f 0px 22px 50px`}`,
     }}
   >
     {children}
