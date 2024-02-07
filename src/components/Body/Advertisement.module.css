@@ -1,0 +1,7 @@
+.ads {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 280;
+  border-radius: 15px;
+}

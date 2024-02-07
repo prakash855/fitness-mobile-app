@@ -1,44 +1,25 @@
 import watch from "../../assets/images/watch.svg";
 import { Button } from "../Button/Button";
 
+const Layer = ({ top, width, background, children }) => (
+  <div
+    className="absolute left-1/2 transform -translate-x-1/2 rounded-lg"
+    style={{
+      top,
+      width,
+      background,
+      height: 280,
+    }}
+  >
+    {children}
+  </div>
+);
+
 export const Advertisement = () => (
   <div style={{ position: "relative", width: "100%", height: "45%" }}>
-    <div
-      style={{
-        position: "absolute",
-        top: 0,
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: "85%",
-        height: 280,
-        borderRadius: "15px",
-        background: "#fff3d8",
-      }}
-    ></div>
-    <div
-      style={{
-        position: "absolute",
-        top: 15,
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: "90%",
-        height: 280,
-        borderRadius: "15px",
-        background: "#ffbfa6",
-      }}
-    ></div>
-    <div
-      style={{
-        position: "absolute",
-        top: 30,
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: "98%",
-        height: 280,
-        borderRadius: "15px",
-        background: "#2f2f2f",
-      }}
-    >
+    <Layer top={0} background="#fff3d8" width="85%" />
+    <Layer top={15} background="#ffbfa6" width="90%" />
+    <Layer top={30} background="#2f2f2f" width="98%">
       <div className="flex justify-between">
         <div className="content pl-6 pt-6 flex flex-col justify-between">
           <div>
@@ -56,6 +37,6 @@ export const Advertisement = () => (
           <img src={watch} alt="" className="w-full lg:w-auto" />
         </div>
       </div>
-    </div>
+    </Layer>
   </div>
 );
