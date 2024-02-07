@@ -3,7 +3,7 @@ import { Steps } from "./Steps";
 
 export const Record = () => {
   return (
-    <div className="flex justify-between">
+    <div style={{ height: "9%" }} className="flex justify-between">
       <Steps />
       <div
         style={{ width: 178, height: 178, top: "-7rem" }}

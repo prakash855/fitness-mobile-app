@@ -2,7 +2,7 @@ import watch from "../../assets/images/watch.svg";
 import { Button } from "../Button/Button";
 
 export const Advertisement = () => (
-  <div style={{ position: "relative", width: "100%", height: "100%" }}>
+  <div style={{ position: "relative", width: "100%", height: "45%" }}>
     <div
       style={{
         position: "absolute",
@@ -40,7 +40,7 @@ export const Advertisement = () => (
       }}
     >
       <div className="flex justify-between">
-        <div className="content pl-6 py-4 flex flex-col justify-between">
+        <div className="content pl-6 pt-6 flex flex-col justify-between">
           <div>
             <b className="mainColor">Smart Watch</b>
             <div style={{ fontSize: "1.8rem" }} className="text-white">
@@ -53,7 +53,7 @@ export const Advertisement = () => (
           <Button name="Scan" color="white" background="#FF601F" />
         </div>
         <div className="relative">
-          <img src={watch} alt="" className="w-full" />
+          <img src={watch} alt="" className="w-full lg:w-auto" />
         </div>
       </div>
     </div>

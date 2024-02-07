@@ -16,11 +16,27 @@ export const Header = () => {
         </div>
         <img src={user} alt="" />
       </div>
-      <div style={{ fontSize: "2rem", fontWeight: "700" }}>Your</div>
-      <div style={{ fontSize: "2rem", fontWeight: "700" }}>Fitness Tracker</div>
-      <div className="flex">
-        <Button name="Connected Device" background="#ff6020" color="#ffff" />
-        <Button name="Statistics" background="#f2f2f2" color="#a9a9a9" />
+      <div className="mt-3 ml-3">
+        <div className="text-4xl tracking-wider" style={{ fontWeight: 700 }}>
+          Your
+        </div>
+        <div className="text-4xl tracking-wider" style={{ fontWeight: 700 }}>
+          Fitness Tracker
+        </div>
+      </div>
+      <div className="flex justify-between mt-6">
+        <Button
+          name="Connected Device"
+          background="#ff6020"
+          color="#ffff"
+          height="4rem"
+        />
+        <Button
+          name="Statistics"
+          background="#f2f2f2"
+          color="#a9a9a9"
+          height="4rem"
+        />
       </div>
     </div>
   );
